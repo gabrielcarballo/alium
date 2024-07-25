@@ -1,0 +1,24 @@
+{
+  "name": "@alium/api",
+  "version": "1.0.0",
+  "description": "API for Alium",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@alium/auth": "workspace:*"
+  },
+  "devDependencies": {
+    "@alium/eslint-config": "workspace:*",
+    "@alium/prettier": "workspace:*",
+    "@alium/tsconfig": "workspace:*",
+    "@types/node": "^20.14.12",
+    "tsx": "^4.16.2"
+  },
+  "prettier": "@alium/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@alium/eslint-config/node"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "@alium/tsconfig/node.json",
+  "include": ["src/**/*"],
+}
