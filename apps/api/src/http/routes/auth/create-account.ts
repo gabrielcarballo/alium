@@ -11,7 +11,7 @@ export async function createAccount(app: FastifyInstance) {
         password: z.string().min(6),
       }),
     },
-    handler: async (request, _reply) => {
+    handler: async (request) => {
       const { email, password } = request.body
       console.log(email, password, '=> User Created!')
       return { message: 'User Created!', email, password }
